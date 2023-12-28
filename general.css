@@ -1,0 +1,95 @@
+/*
+
+### Primary
+
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+### Neutral
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%)
+
+*/
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --yellow-bright: hsl(71, 73%, 54%);
+  --gray-light: hsl(204, 43%, 93%);
+  --blue-grayish: hsl(218, 22%, 67%);
+
+  --font-medium: 400;
+  --font-bold: 700;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/**************************/
+/* GENRAL REUSABLE COMPONENTS */
+/**************************/
+
+.container {
+  max-width: 100;
+  min-height: 100vh;
+  background: #e6eff5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary:link,
+.btn-primary:visited {
+  display: block;
+  max-width: 100%;
+  padding: 1.5rem 0 1.4rem;
+  background-color: var(--yellow-bright);
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: var(--font-bold);
+  letter-spacing: -0.2px;
+  cursor: pointer;
+}
+
+.heading-secondary {
+  font-size: 2.4rem;
+  color: var(--cyan);
+  font-weight: var(--font-bold);
+  letter-spacing: -0.03px;
+  margin-bottom: 2.4rem;
+}
+
+.heading-tertiary {
+  font-size: 1.8rem;
+  letter-spacing: -0.225px;
+  font-weight: var(--font-bold);
+  margin-bottom: 1.8rem;
+}
+
+.label {
+  font-size: 1.6rem;
+  font-weight: var(--font-medium);
+  line-height: 26px; /* 162.5% */
+  letter-spacing: -0.2px;
+  opacity: 0.5;
+}

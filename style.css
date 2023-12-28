@@ -1,0 +1,101 @@
+.pricing {
+  width: 63.5rem;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.section-join,
+.section-suscription,
+.section-why-us {
+  padding: 4rem;
+}
+
+.join-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.join-sub-heading {
+  font-size: 1.8rem;
+  color: var(--yellow-bright);
+}
+
+.join-text {
+  color: var(--blue-grayish);
+}
+
+.section-suscription {
+  background-color: var(--cyan);
+  color: #fff;
+  flex: 0 1 50%;
+}
+
+.section-why-us {
+  background-color: rgba(42, 179, 177, 0.9);
+  color: #fff;
+  flex: 0 1 50%;
+}
+
+.why-us-text {
+  font-size: 1.4rem;
+  line-height: 1.8; /* 142.857% */
+  letter-spacing: -0.175px;
+  opacity: 0.75;
+}
+
+.suscription-price {
+  font-size: 3.2rem;
+  font-weight: var(--font-bold);
+  letter-spacing: -0.4px;
+}
+
+.suscription-text-box {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.suscription-text {
+  line-height: 26px; /* 162.5% */
+  letter-spacing: -0.2px;
+  margin-bottom: 2.6rem;
+}
+
+@media (max-width: 375px) {
+  body {
+    font-size: 1.4rem;
+  }
+
+  .bottom-container {
+    flex-direction: column;
+  }
+
+  .heading-secondary {
+    font-size: 2rem;
+  }
+
+  .join-sub-heading {
+    font-size: 1.5rem;
+  }
+
+  .section-join {
+    padding: 2.8rem 2.4rem 3.2rem;
+  }
+
+  .section-why-us,
+  .section-suscription {
+    padding: 2.4rem;
+  }
+}
